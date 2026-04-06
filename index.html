@@ -347,7 +347,7 @@
       <img
         src="static/images/Homepage-fig1.svg"
         alt="Teaser image"
-        style="width: 100%; height: auto; border-radius: 16px; border: 10px solid #FFF;"
+        style="width: 100%; height: auto; border-radius: 25px; border: 10px solid #FFF;"
       >
       </center>
 
@@ -599,56 +599,159 @@ Progress in military perception is often constrained not only by model design, b
 
 
 
-
 <section class="hero teaser is-light">
   <div class="container is-max-desktop">
 
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Benchmarking test</h2>
+          <h2 class="title is-3">Potential applications of the AMOD dataset</h2>
         </div>
       </div>
 
-      <center>
-      <img
-        src="static/images/Homepage-fig3.svg"
-        alt="Teaser image"
-        style="width: 100%; height: auto; border-radius: 16px; border: 10px solid #FFF;"
-      >
-      </center>
+    <!-- <div class="amod-header has-text-centered">
+      <span class="amod-eyebrow">Use Cases</span>
+      <h2 class="title is-2 amod-title">Potential Applications of AMOD</h2>
+      <p class="amod-description">
+        AMOD can support a range of research directions in aerial perception,
+        multimodal representation learning, and transfer learning.
+      </p>
+    </div> -->
 
-      <h2 class="subtitle has-text-centered">
-        🚧 Under construction! 🚧 
-      </h2>
-      
+    <div class="columns is-multiline application-grid">
+      <div class="column is-12-mobile is-4-desktop">
+        <div class="application-card">
+          <div class="card-index">01</div>
+          <h3 class="card-title">Multi-view Learning Benchmark</h3>
+          <p class="card-text">
+            Benchmark and advance multi-view learning methods with diverse aerial viewpoints and structured scene variations.
+          </p>
+        </div>
+      </div>
+
+      <div class="column is-12-mobile is-4-desktop">
+        <div class="application-card">
+          <div class="card-index">02</div>
+          <h3 class="card-title">RGB-T Fusion and Cross-modal Learning</h3>
+          <p class="card-text">
+            Develop and evaluate RGB-T fusion pipelines and cross-modal representation learning approaches in a controlled setting.
+          </p>
+        </div>
+      </div>
+
+      <div class="column is-12-mobile is-4-desktop">
+        <div class="application-card">
+          <div class="card-index">03</div>
+          <h3 class="card-title">Pretraining for Real-world Transfer</h3>
+          <p class="card-text">
+            Use AMOD as an effective pretraining source for transfer to real-world aerial domains and downstream perception tasks.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
+<style>
+  .amod-applications {
+    background: linear-gradient(180deg, #f7f8fc 0%, #ffffff 100%);
+    padding: 5rem 1.5rem;
+  }
+
+  .amod-header {
+    margin-bottom: 3rem;
+  }
+
+  .amod-eyebrow {
+    display: inline-block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #c65bd8;
+    background: rgba(198, 91, 216, 0.1);
+    padding: 0.45rem 0.8rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+  }
+
+  .amod-title {
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 0.8rem !important;
+  }
+
+  .amod-description {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: #5b6475;
+  }
+
+  .application-grid {
+    margin-top: 1rem;
+  }
+
+  .application-card {
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid #ececf3;
+    border-radius: 20px;
+    padding: 1.75rem 1.5rem;
+    box-shadow: 0 10px 30px rgba(18, 25, 38, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  }
+
+  .application-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(18, 25, 38, 0.1);
+    border-color: #d9c2f3;
+  }
+
+  .card-index {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #a855f7;
+    background: rgba(168, 85, 247, 0.1);
+    border-radius: 999px;
+    padding: 0.35rem 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .card-text {
+    color: #5f6b7a;
+    font-size: 0.98rem;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .amod-applications {
+      padding: 4rem 1.25rem;
+    }
+
+    .amod-title {
+      font-size: 1.9rem !important;
+    }
+
+    .amod-description {
+      font-size: 1rem;
+    }
+  }
+</style>
 
 
-<section class="hero teaser ">
-  <div class="container is-max-desktop">
-
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Potential applications of G-MAD</h2>
-        </div>
-      </div>
-
-      <h2 class="subtitle has-text-left">
-        <p>1. Benchmarking and advancing multi-view learning</p>
-        <p>2. Developing and evaluating RGB-T fusion / cross-modal learning methods</p>
-        <p>3. Serving as an effective pretraining source for transfer to real-world domains</p>
-      </h2>
-      
-    </div>
-  </div>
-</section>
-
-<section class="hero teaser is-light">
+<section class="hero teaser">
   <div class="container is-max-desktop">
 
     <div class="hero-body">
@@ -663,7 +766,7 @@ Progress in military perception is often constrained not only by model design, b
       <img
         src="static/images/Homepage-fig5.png"
         alt="Teaser image"
-        style="width: 100%; height: auto; border-radius: 16px; border: 10px solid #FFF;"
+        style="width: 100%; height: auto; border-radius: 25px; border: 10px solid #FFF;"
       >
       </center>
 
